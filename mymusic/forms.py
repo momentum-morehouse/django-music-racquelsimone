@@ -1,16 +1,17 @@
 from django import forms
 from .models import Album
 
+
 class AlbumForm(forms.ModelForm):
-    Meta:
-    model = Album
-    fields = [
+    class Meta:
+      model = Album
+      fields = [
         'album_title',
         'artist_name',
-        'date_released',
+        'date_released',]
 
 
-    ]
+    
 
 
     widgets = {
