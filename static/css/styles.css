@@ -1,4 +1,39 @@
-.h1 {
-    color: rgb(194, 0, 129);
-    font-family: 'Lobster';
+.albumlist {
+  display: flex;
+  
 }
+
+
+h1 {
+    color: #a40e4cff;
+    font-family: Abril Fatface, cursive;
+    
+}
+
+
+h2 {
+    color: #2c2c54ff;
+    font-family: Abril Fatface, cursive;
+    
+}
+
+h3 {
+  color: #a40e4cff;
+  font-family: Abril Fatface, cursive;
+}
+
+h4 {
+  color: #f49d6eff;
+  font-family: Abril Fatface, cursive;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+p {
+  font-family: Abril Fatface, cursive;
+}
+
+
+
