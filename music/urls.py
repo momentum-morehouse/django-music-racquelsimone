@@ -21,10 +21,10 @@ from mymusic import views as mymusic_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('albums',mymusic_views.list_albums, name='list_albums'),
-    path('albums/add/',mymusic_views.add_albums,name='add_albums'),
+    path('albums/add/',mymusic_views.add_albums, name='add_albums'),
     path('albums/<int:pk>/edit/', mymusic_views.edit_album, name='edit_album'),
-    path('albums/<int:pk>/delete/', mymusic_views.delete_album, name='delete_album')
-   
+    path('albums/<int:pk>/delete/', mymusic_views.delete_album, name='delete_album'),
+    path('albums/<int:pk>/', mymusic_views.view_album, name='view_album')
 ]
 
 if settings.DEBUG:

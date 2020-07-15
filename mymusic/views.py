@@ -42,3 +42,11 @@ def delete_album(request, pk):
     return render(request, "albums/delete_album.html",
                   {"album": album})
       
+
+def view_album(request, pk):
+    album = get_object_or_404(Album, pk=pk) 
+    
+
+    return render(request, "albums/album_detail.html",
+
+                  {"album": album})

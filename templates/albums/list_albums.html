@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+
 <h1>Albums</h1>
 
 <p><a href="{% url 'add_albums' %}">Add New Album</a></p>
@@ -11,6 +13,8 @@
     <h2>{{ album.album_title }}</h2>
     <h3>{{ album.artist_name}}</h3>
     <h4>{{ album.date_released}}</h4>
+
+
 </div>  
 </div> 
 

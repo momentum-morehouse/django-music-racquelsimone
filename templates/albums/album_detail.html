@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="w-33 pa3">
+	<h2>{{ album.album_title }}</h2>
+
+
+    {% if album.album_title %}
+    <div class="flex">
+      <!-- <div class="pr2"><i class="icofont-phone"></i></div> -->
+      <div>{{ album.album_title }}</div>
+    </div>
+    {% endif %}
+
+    {% if album.artist_name %}
+    <div class="flex">
+      <!-- <div class="pr2"><i class="icofont-ui-email"></i></div> -->
+      <div>{{ album.artist_name }}</div>
+    </div>
+    {% endif %}
+
+    {% if album.date_released %}
+    <div class="flex">
+      <!-- <div class="pr2"><i class="icofont-ui-birthday"></i></div> -->
+      <div>{{ album.date_released }}</div>
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}
