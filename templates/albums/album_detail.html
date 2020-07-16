@@ -1,8 +1,13 @@
 {% extends "base.html" %} {% block content %}
 
+
+
+<a href="{% url 'list_albums' %}">Go Back</a><br>
+
+
 <div class="w-33 pa3">
-	<h2>{{ album.album_title }}</h2>
-   <img src='{{ album.image_url }}' height="350" width="350">
+	<center><h2>{{ album.album_title }}</h2></center>
+   <center><img src='{{ album.image_url }}' height="350" width="350"></center>
 
 
     <!-- {% if album.album_title %}
@@ -10,19 +15,23 @@
       <!-- <div class="pr2"><i class="icofont-phone"></i></div> -->
       <!-- <div>{{ album.album_title }}</div>
     </div>
-    {% endif %} --> -->
+    {% endif %} --> 
 
     {% if album.artist_name %}
     <div class="flex">
       <!-- <div class="pr2"><i class="icofont-ui-email"></i></div> -->
-      <div>{{ album.artist_name }}</div>
+      <center><div>{{ album.artist_name }}</div></center>
     </div>
     {% endif %}
 
     {% if album.date_released %}
     <div class="flex">
       <!-- <div class="pr2"><i class="icofont-ui-birthday"></i></div> -->
-      <div>{{ album.date_released }}</div>
+      <center><div>{{ album.date_released }}</div></center>
+
+
+
+
     </div>
     {% endif %}
 
