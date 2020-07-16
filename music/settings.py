@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['django-music--racquelsimone.repl.co',
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
     # Third-party
     'debug_toolbar',
     'django_extensions',
-
+    
     # Project-specific
     'users',
     'mymusic',
@@ -141,3 +142,5 @@ INTERNAL_IPS = [
     '127.0.0.1',
     # ...
 ]
+
+LOGIN_REDIRECT_URL = '/albums'

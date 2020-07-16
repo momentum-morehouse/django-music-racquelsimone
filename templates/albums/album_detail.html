@@ -2,14 +2,15 @@
 
 <div class="w-33 pa3">
 	<h2>{{ album.album_title }}</h2>
+   <img src='{{ album.image_url }}' height="350" width="350">
 
 
-    {% if album.album_title %}
+    <!-- {% if album.album_title %}
     <div class="flex">
       <!-- <div class="pr2"><i class="icofont-phone"></i></div> -->
-      <div>{{ album.album_title }}</div>
+      <!-- <div>{{ album.album_title }}</div>
     </div>
-    {% endif %}
+    {% endif %} --> -->
 
     {% if album.artist_name %}
     <div class="flex">

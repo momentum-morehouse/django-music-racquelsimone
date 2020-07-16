@@ -8,7 +8,7 @@
     {% csrf_token %}
     <p>Are you sure you want to delete {{ album.album_title }}?</p>
     <div>
-      <button type="button" class="btn btn-danger">Delete Album</button>
+      <button type="submit" class="btn btn-danger">Delete Album</button>
       <!-- <button type="submit">Delete Album</button><br /> -->
       <a href="{% url 'list_albums' %}">Cancel</a>
     </div>

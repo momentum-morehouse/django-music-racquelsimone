@@ -1,8 +1,13 @@
-.albumlist {
+.albumlist{
   display: flex;
-  
+  flex-direction: row; 
 }
 
+.flex {
+    color: #a40e4cff;
+    font-family: Abril Fatface, cursive;
+    font-size: x-large;
+}
 
 h1 {
     color: #a40e4cff;

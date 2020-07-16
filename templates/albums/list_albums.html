@@ -1,31 +1,25 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 
-<h1> My Albums</h1>
+<h1>My Albums</h1>
 
 <p><a href="{% url 'add_albums' %}">Add New Album</a></p>
 
 
 <div class='albumlist'>
-  
-  {% for album in albums %}
-  <div class='albumdetails'>
-    <h2>{{ album.album_title }}</h2>
-    <img src='{{ album.image_url }}' height="250" width="250">
+
+	{% for album in albums %}
+	  <div class='albumdetails'>
+		<h2>{{ album.album_title }}</h2>
+		<img src='{{ album.image_url }}' height="350" width="350">
     <h3>{{ album.artist_name}}</h3>
     <h4>{{ album.date_released}}</h4>
-
-
-</div>  
-  </div> 
-
-<p>
+    <p>
       <a href="{% url 'edit_album' pk=album.pk %}">Edit Album</a><br>
       <a class="red" href="{% url 'delete_album' pk=album.pk %}">Delete Album</a>    
-     
     </p>
+    </div>  
+     {% endfor %} 
+</div> 
 
-{% endfor %} 
 {% endblock %}
